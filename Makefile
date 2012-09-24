@@ -2,7 +2,7 @@
 
 # These are the variables that are specific to the package
 NAME=eshell-manual
-VERSION=$(shell git show | head -n1 | cut -d' ' -f2 | head -c8)
+VERSION=$(shell git show --pretty=format:%at | head -n1)
 DOC="An updated manual for Eshell."
 
 # Everything beyond here should be generic
