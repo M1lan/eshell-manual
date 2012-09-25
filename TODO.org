@@ -1,39 +1,39 @@
 #+STARTUP: content
 
 * Documentation
-** TODO Completion
+** TODO [#A] Completion
 Document Eshell completion.
 
-** TODO Built-in variables
+** TODO [#C] Built-in variables
 This appears to be complete, but check the source for any unmentioned variables.
 
-** TODO "Input/Output" chapter
+** TODO [#A] "Input/Output" chapter
 Document redirection.
 
-** TODO "Extension modules" chapter
+** TODO [#B] "Extension modules" chapter
 - [X] Find out from johnw what this should cover.
 ~<johnw> aidalgol: check out em-banner.el~
 
-** TODO "Extras and Goodies" chapter
+** TODO [#C] "Extras and Goodies" chapter
 This should be removed until the manual is finished and there are any miscellaneous topics left undocumented.
 
-** TODO Remove Zsh references
+** TODO [#C] Remove Zsh references
 Figure out exactly what Zsh-style syntax Eshell supports (for globbing), and document it to obsolete the need for referring to the Zsh manual.
 
 * Code
-** TODO Fix =eshell/kill=
+** TODO [#B] Fix =eshell/kill=
 Add ability to kill non-process objects to match the documentation, and update the documentation to describe usage in more detail.
 
-** TODO Remove predicate reference
+** TODO [#C] Remove predicate reference
 Remove the functions =eshell-display-predicate-help= and =eshell-display-predicate-help= and their associated variables, since this is already better documented in the Zsh manual.  See [["Predicates"%20section][the corresponding TODO item for the documentation]].
 
 The chapter "Expansion" covers behaviour implemented in three Eshell modules: esh-var, em-glob, and em-pred.  em-pred is the only one of these to have a syntax reference accessible via commands.  The syntax can be changed by the user, possibly making this reference incorrect or incomplete because it is hard-coded into the source code, so I think this should be removed, especially as the syntax is already documented more fully in the Zsh manual.
 
-** TODO Angle brackets
+** TODO [#A] Angle brackets
 Figure out what angle brackets mean in Eshell.  See lines 37-39 of ~esh-var.el~.  They seem to be a half-baked implementation of Bash's =<()= behaviour.
 
-** TODO =su= and =sudo= problems
+** TODO [#A] =su= and =sudo= problems
 Determine the cause of the erratic behaviour of the =su= and =sudo= commands that keeps coming up in ~#emacs~.
 
-** TODO Bug squashing
+** TODO [#B] Bug squashing
 Squash any easy bugs mentioned at the end of the manual.
